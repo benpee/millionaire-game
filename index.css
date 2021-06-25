@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  background: #040c15;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: orangered;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+header div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.msg {
+  font-size: 40px;
+  color: antiquewhite;
+  text-align: center;
+  border: none;
+  padding: 8% 5%;
+  font-weight: 600;
+  border-radius: 15%;
+  height: 25%;
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  background-color: #333;
+  left: 50px;
+  z-index: 5;
+}
+
+.startAgain {
+  background-color: #f59b2f;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+.timer {
+  border-radius: 50%;
+  background: #131516;
+  padding: 35px 15px;
+  width: 120px;
+  height: 120px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 5%;
+}
+
+/* Timelines */
+
+.wayOut {
+  display: block;
+  justify-content: center;
+  width: 50%;
+}
+
+.wayOut .timeline {
+  height: 10%;
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline img {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.wayOut div img:hover {
+  opacity: 0.5;
+  color: rgba(252, 244, 53, 1);
+}
+
+img {
+  width: 100%;
+}
+
+/* --Money List-- */
+
+.money {
+  width: 24%;
+}
+
+.money ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.money li {
+  color: #f59b2f;
+  font-size: 1.2em;
+  margin: 2px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.checkPoint {
+  color: white;
+}
+
+.active {
+  color: white;
+  background: #76c7ca;
+  padding: 2px 6px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.active li {
+  opacity: 0.3;
+}
+
+/*--- Questions & Answers --*/
+
+ol > .checkPoint {
+  color: white;
+}
+
+.quiz {
+  color: #eee;
+  width: 100%;
+  margin: 5% 10%;
+  /* position: absolute; */
+}
+
+.question {
+  width: 90%;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.num {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  right: 41vw;
+  z-index: 2;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.disableBtns {
+  pointer-events: none;
+}
+
+.optionList {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.optionList button {
+  width: 40%;
+  justify-content: space-between;
+  background: 1c232c;
+  border: 1px solid #6d7c8e;
+  border-radius: 10px;
+  padding: 5px 5px;
+  height: 40px;
+  margin: 5px 8px;
+  font-size: 20px;
+  outline: 0;
+}
+
+.optionList button:hover {
+  color: #333;
+  background: #f59b2f;
+}
+
+.correct {
+  background: rgb(59, 231, 59);
+}
+
+.wrong {
+  background: rgb(231, 13, 13);
+}
+
+/* Hide element */
+
+.hide {
+  display: none;
+}
+
+/* Timer */
+
+.timeOut {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+  border: 1px solid #6d7c8e;
+  color: white;
+  background: #05090c;
+  padding: 10px 10px;
+  z-index: 99;
+}
+
+.timeOut h3 {
+  font-size: 30px;
+}
+
+.timeOut p {
+  font-size: 25px;
+}
+
+.timeOut button {
+  padding: 10px 30px;
+  color: #333;
+  border: 1px solid #b98e40;
+  background: #fcba40;
+}
+
+.timeOut button:hover {
+  color: #eee;
+  background: #f59b2f;
+  transition: ease-out 0.1s;
+}
